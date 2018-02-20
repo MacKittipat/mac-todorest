@@ -35,3 +35,7 @@ http://localhost:8080/todos
 * Search by title : Send `GET` to http://localhost:8080/todos/search/findByTitle?title=T1
 
 * Search by due date : Send `GET` to http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11
+
+## Test with Postman
+
+Import https://github.com/MacKittipat/mactodorest/blob/master/Todo.postman_collection.json to Postman app.
