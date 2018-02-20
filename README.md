@@ -1,7 +1,8 @@
 # mactodorest
 
 ## Set Up
-1. Clone project
+
+1. Clone project and `cd` to project directory
 2. Run `mvn clean install` 
 3. Run `mvn spring-boot:run`
 
@@ -9,13 +10,7 @@
 
 http://localhost:8080/todos
 
-* Insert : Use POST
-* Update : Use PUT with `/todos/{id}`
-* Delete : Use DELETE with `/todos/{id}`
-* Search by title : http://localhost:8080/todos/search/findByTitle?title=T1
-* Search by due date : http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11
-
-## JSON Body
+* Insert : Send `POST` request with below JSON Body
 
 ```
 {
@@ -24,3 +19,19 @@ http://localhost:8080/todos
 	"dueDate": "20-02-2018 11:11"
 }
 ```
+
+* Update : Send `PUT` request to `/todos/{id}` with below JSON Body
+
+```
+{
+	"title": "Title2",
+	"desc": "Desc1",
+	"dueDate": "20-02-2018 11:11"
+}
+```
+
+* Delete : Send `DELETE` request to `/todos/{id}`
+
+* Search by title : Send `GET` to http://localhost:8080/todos/search/findByTitle?title=T1
+
+* Search by due date : Send `GET` to http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11
