@@ -1,0 +1,126 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Todo",
+		"_postman_id": "4c7972a6-9bd5-5cfe-44f4-fd4d51d731ac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert todo",
+			"request": {
+				"url": "localhost:8080/todos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Title1\",\n\t\"desc\": \"Desc1\",\n\t\"dueDate\": \"20-02-2018 11:11\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search todo by title",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/todos/search/findByTitle?title=Title1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"search",
+						"findByTitle"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Title1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search todo by due date",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"search",
+						"findByDueDate"
+					],
+					"query": [
+						{
+							"key": "dueDate",
+							"value": "20-02-2018 11:11",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update todo",
+			"request": {
+				"url": " http://localhost:8080/todos/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"New Title\",\n\t\"desc\": \"Desc1\",\n\t\"dueDate\": \"20-02-2018 11:11\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo",
+			"request": {
+				"url": " http://localhost:8080/todos/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
