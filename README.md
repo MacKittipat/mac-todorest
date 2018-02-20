@@ -1,5 +1,10 @@
 # mactodorest
 
+## Requirement
+* Java 8
+* Maven
+* **No database is required. I use H2, in-memory database**
+
 ## Set Up
 
 1. Clone project and `cd` to project directory
