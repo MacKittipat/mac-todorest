@@ -37,9 +37,9 @@ http://localhost:8080/todos
 
 * Delete : Send `DELETE` request to `/todos/{id}`
 
-* Search by title : Send `GET` to http://localhost:8080/todos/search/findByTitle?title=T1
+* Search by title : Send `GET` to `http://localhost:8080/todos/search/findByTitle?title=T1`
 
-* Search by due date : Send `GET` to http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11
+* Search by due date : Send `GET` to `http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11`
 
 ## Test with Postman
 
