@@ -14,3 +14,13 @@ http://localhost:8080/todos
 * Delete : Use DELETE with `/todos/{id}`
 * Search by title : http://localhost:8080/todos/search/findByTitle?title=T1
 * Search by due date : http://localhost:8080/todos/search/findByDueDate?dueDate=20-02-2018 11:11
+
+## JSON Body
+
+```
+{
+	"title": "Title1",
+	"desc": "Desc1",
+	"dueDate": "20-02-2018 11:11"
+}
+```
